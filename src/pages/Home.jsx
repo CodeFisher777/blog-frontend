@@ -37,7 +37,7 @@ export const Home = () => {
               <Post
                 _id={obj._id}
                 title={obj.title}
-                imageUrl={`${process.env.REACT_APP_API_URL}/${obj.imageUrl}`}
+                imageUrl={`http://localhost:4444/${obj.imageUrl}`}
                 createdAt={obj.createdAt}
                 viewsCount={obj.viewsCount}
                 commentsCount={3}
@@ -60,7 +60,7 @@ export const Home = () => {
               },
               {
                 user: {
-                  fullName: 'Миша',
+                  fullName: 'Иван Иванов',
                   avatarUrl: 'https://mui.com/static/images/avatar/2.jpg',
                 },
                 text: 'When displaying three lines or more, the avatar is not aligned at the top. You should set the prop to align the avatar at the top',
